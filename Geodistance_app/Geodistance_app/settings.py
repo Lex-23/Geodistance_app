@@ -9,7 +9,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'x5zki-s1*=ypemrmami559^wm#^f%ys60s2mxm#q^tgjxjq89d'
+SECRET_KEY = 'x5zki-s1*=ypemrmami559^wm#^f%ys60s2mxm#q^tgjxjq67p'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -28,6 +28,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'measurements',
+
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
@@ -90,6 +92,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.1/topics/i18n/
