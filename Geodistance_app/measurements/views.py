@@ -19,7 +19,7 @@ def calculate_distance_view(request):
 
     ip_ = get_ip_address(request)
     ip = '46.216.43.208'
-    country, city, lat, lon = get_geo(ip)  # In production app using 'ip_'
+    country, city, lat, lon = get_geo(ip)  # In production app will use 'ip_'
     location = geolocator.geocode(city)
 
     # location coordinates
