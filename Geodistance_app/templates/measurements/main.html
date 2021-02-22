@@ -6,24 +6,34 @@ calculate distance
 {% endblock title %}
 
 {% block content %}
+<div class="container">
+    <br>
+    <p align="left" style="font-size: 37px;
+    color: #CC50CC;
+    text-shadow: 3px 2px 3px black;">
+        Find out the distance to anywhere in the world
+    </p>
+    <br>
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1"
-     aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Distance to {{ destination }} is: </h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-          {{ distance }} km
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1"
+         aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Distance to {{ destination }} is: </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              {{ distance }} km
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
 
+</div>
 
 {{ map|safe }}
 
